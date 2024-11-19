@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.container h1 span{
+    color: #ff2963;
+    text-transform: uppercase;
+}
+
+.container textarea{
+    width: 600px;
+    height: 250px;
+    background-color: #403d84;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.container textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+
+.container .row{
+    width: 600px;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .row button{
+    background-color: #ff2963;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.container .row button img{
+    width: 16px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.container .row select{
+    flex: 1; /*-- prend le reste de la place de la ligne----*/
+    color: white;
+    background-color: #403d84;
+    height: 50px;
+    padding: 0px 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    appearance: none; /*-- suppression du chevron de la li----*/
+    background-image: url(../_imgs/dropdown.png);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: 20px;
+    background-position-x: calc(100% - 20px);
+}
+
